@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Eurostile";
+    src: url("assets/fonts/EurostileExtendedBlack.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OCR-B";
+    src: url("assets/fonts/OCR-B.ttf") format("truetype");
+}
+
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #15141A;
+}
+
+#titulo {
+    font-family: "Eurostile", sans-serif;
+    font-size: 50px;
+    color: #F0EEF5;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+#navegador {
+    text-align: center;
+}
+
+#navegador ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+#navegador a {
+    font-family: "Eurostile", sans-serif;
+    font-size: 30px;
+    color: #F0EEF5;
+    text-decoration: none;
+
+    border: 2px solid #44444A;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+#navegador a:visited,
+#navegador a:hover,
+#navegador a:active {
+    font-family: "Eurostile", sans-serif;
+    font-size: 30px;
+    color: #F0EEF5;
+    text-decoration: none;
+}
