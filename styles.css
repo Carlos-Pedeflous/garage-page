@@ -13,14 +13,32 @@ padding: 0;
 box-sizing: border-box;
 }
 
+#inicio {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("/assets/imagenes/delta/delta-02.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
 body {
-background-color: #15141A;
+background-color: #050505;
 }
 
 #titulo {
     font-family: "Eurostile", sans-serif;
     font-size: 50px;
-    color: #F0EEF5;
+    color: #FFFFFF;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -39,20 +57,32 @@ background-color: #15141A;
     gap: 40px;
 }
 #navegador a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     font-family: "Eurostile", sans-serif;
     font-size: 30px;
     color: #F0EEF5;
     text-decoration: none;
 
-    border: 2px solid #44444A;
+    border: 2px solid #333333;
     padding: 10px 20px;
     border-radius: 8px;
 }
+
+#navegador a img {
+    width: 35px;
+    height: 25px;
+    object-fit: cover;
+}
+
 #navegador a:visited,
 #navegador a:hover,
 #navegador a:active {
     font-family: "Eurostile", sans-serif;
     font-size: 30px;
-    color: #F0EEF5;
+    color: #FFFFFF;
     text-decoration: none;
 }
