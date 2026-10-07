@@ -70,19 +70,24 @@ background-color: #050505;
     border: 2px solid #333333;
     padding: 10px 20px;
     border-radius: 8px;
+
+    transition: 0.2s ease;
+}
+
+#navegador a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
 }
 
 #navegador a img {
     width: 35px;
     height: 25px;
     object-fit: cover;
+
+    transition: 0.2s ease;
 }
 
-#navegador a:visited,
-#navegador a:hover,
-#navegador a:active {
-    font-family: "Eurostile", sans-serif;
-    font-size: 30px;
-    color: #FFFFFF;
-    text-decoration: none;
+#navegador a:hover img {
+    transform: scale(1.1);
 }
