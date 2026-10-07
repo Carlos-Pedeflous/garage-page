@@ -91,3 +91,269 @@ background-color: #050505;
 #navegador a:hover img {
     transform: scale(1.1);
 }
+
+/* ================================
+   REPRODUCTOR DE MÚSICA
+   ================================ */
+
+#music-player {
+
+    position: fixed;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px);
+    max-width: 1200px;
+
+    height: 68px;
+
+    background: rgba(5, 5, 5, 0.92);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 25px;
+
+    gap: 18px;
+
+    z-index: 9999;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* ================================
+   BOTÓN PLAY / PAUSA
+   ================================ */
+
+#play-btn {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #555555;
+    border-radius: 50%;
+
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#play-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    transform: scale(1.05);
+}
+
+#play-btn svg {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+}
+
+#play-btn .play-icon {
+    fill: currentColor;
+    stroke: none;
+}
+
+#play-btn .pause-icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+}
+/* ================================
+   BOTÓN MUTE
+   ================================ */
+
+#mute-btn {
+    width: 28px;
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#mute-btn:hover {
+    color: #cccccc;
+    transform: scale(1.08);
+}
+
+#mute-btn svg {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+
+    fill: none;
+    stroke: currentColor;
+
+    stroke-width: 1.6;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* INFORMACIÓN DE LA CANCIÓN */
+
+#track-info {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 190px;
+}
+
+#track-title {
+    font-family: "Eurostile", sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+#track-artist {
+    font-family: "OCR-B", monospace;
+    font-size: 10px;
+    color: #888888;
+
+    margin-top: 4px;
+}
+
+
+/* TIEMPOS */
+
+#current-time,
+#duration {
+    font-family: "OCR-B", monospace;
+    font-size: 11px;
+    color: #AAAAAA;
+
+    min-width: 35px;
+}
+
+#duration {
+    text-align: right;
+}
+
+
+/* BARRA DE PROGRESO */
+
+#progress-bar {
+    flex: 1;
+
+    height: 4px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: #333333;
+
+    cursor: pointer;
+}
+
+
+/* PUNTO DE LA BARRA */
+
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+#progress-bar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+/* VOLUMEN */
+
+#volume-bar {
+    width: 90px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 3px;
+
+    background: #333333;
+
+    cursor: pointer;
+}
+
+#volume-bar::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+#volume-bar::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+}
